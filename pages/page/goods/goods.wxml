@@ -1,0 +1,57 @@
+<view class="goods">
+ <navigator url="/pages/page/cart/cart">
+  <view class="cart" >
+    <image class="icon" src="/images/cart2.png"></image>
+
+  </view>
+  </navigator>
+  
+  <view wx:if="{{cartItemsNum!=0}}" class="cartItemsNum">
+     <text>{{cartItemsNum}}</text>
+  </view>
+  
+  <view class="media">
+    <view class="media-img">
+      <image src="{{_goods.img}}"></image>
+    </view>
+    <view class="bar">
+      <text bindtap="addOne">数量{{num}}</text>
+      <text bindtap="addOne">+</text>
+      <text bindtap="addCart" data-index="{{_goods.index}}">加入购物车</text>
+      <image bindtap="addCart" src="/images/cart.png"></image>
+    </view>
+    <view class="media-text">
+      <text class="state">有货</text>
+      <text class="name">{{_goods.goods}}</text>
+      <text class="price">{{_goods.price}}</text>
+    </view>
+  </view>
+
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ?'on':''}}"      data-current='0' bindtap='swichNav'  >商品详情</view>
+    <view class="swiper-tab-list {{currentTab==1 ?'on':'' }}"     data-current='1' bindtap='swichNav' >产品参数</view>
+    <view class="swiper-tab-list {{currentTab==2 ?'on':''}}"      data-current='2' bindtap='swichNav'>售后服务</view>
+  </view>
+  
+  <swiper current="{{currentTab}} " class="swiper-box" duration="300 " style="height:200rpx " bindchange="bindChange">
+  <swiper-item>
+     <view class="text">
+       <text>  这里是{{_goods.goods}}的详情</text>
+     </view>
+  </swiper-item>
+
+<swiper-item>
+    <view class="text">
+      <text class="detail-text">这里是产品参数</text>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class="text">
+      <text class="detail-text">不支持退货</text>
+    </view>
+  </swiper-item>
+  
+</swiper>
+<nav></nav>
+</view>

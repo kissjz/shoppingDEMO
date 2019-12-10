@@ -1,0 +1,12 @@
+.top-img{
+  height:400rpx;
+  margin-bottom:30rpx;
+}
+
+image{
+  width:100%;
+  height:100%;
+}
+.list{
+  margin-bottom: 140rpx;
+}

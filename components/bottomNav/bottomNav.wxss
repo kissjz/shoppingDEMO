@@ -1,0 +1,35 @@
+.bottomNav{
+  position: fixed;
+  height: 130rpx;
+  width:100%;
+  left:0;
+  bottom:0;
+  background-color: #f4f4f4;
+}
+.nav{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 130rpx;
+}
+.item1{
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+}
+.img1{
+  height: 50rpx;
+  width: 50rpx;
+}
+.img2{
+  height: 50rpx;
+  width: 50rpx;
+}
+ 
+ .img3{
+  height: 50rpx;
+  width: 50rpx;
+}
+ 

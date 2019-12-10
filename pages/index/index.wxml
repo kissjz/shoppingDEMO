@@ -1,0 +1,50 @@
+<view class="main">
+  <swiper indicator-dots="true" autoplay="true" interval="{{interval}}">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slider-img" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="search-bar">
+    <navigator url="/pages/page/search/search">
+      <view class="search-text">
+        <icon class="weui-icon-search_in-box search-icon" type="search"></icon>
+        <text>搜索</text>
+      </view>
+    </navigator>
+  </view>
+
+
+  <view class="selected">
+    <view class="select-title">
+      <text>热卖推荐</text>
+    </view>
+  </view>
+
+  <view class="select-top">
+    <view class="sell-items" wx:for='{{imgSell}}' wx:key="index">
+      <navigator url="/pages/page/list/list">
+        <image class="sell-img" src="{{item}}" />
+      </navigator>
+    </view>
+  </view>
+
+
+  <view class="select-bottom">
+    <navigator url="/pages/page/list/list">
+      <image src="/images/s3.png" mode="widthFix"></image>
+    </navigator>
+  </view>
+
+  <view class="select-title">
+    <text>最近新品</text>
+  </view>
+
+  <view>
+    <goods></goods>
+  </view>
+
+  <nav></nav>
+</view>

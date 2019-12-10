@@ -1,0 +1,28 @@
+<view class="bottomNav">
+    <view class="nav">
+     <navigator url="/pages/index/index">
+       <view class="item1">
+          <image class="img1" src="/images/11.png"></image>
+          <text>主页</text>
+       </view>
+       </navigator>
+
+      <navigator url="/pages/page/cart/cart">
+      <view class="item1">
+          <image class="img2" src="/images/21.png"></image>
+          <text>购物车</text>
+       </view>
+        </navigator>
+
+       <navigator url="/pages/page/me/me">
+        <view class="item1">
+          <image class="img3" src="/images/41.png"></image>
+          <text>我的</text>
+       </view>
+       </navigator>
+
+
+    </view>
+
+
+</view>

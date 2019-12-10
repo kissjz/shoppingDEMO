@@ -1,0 +1,98 @@
+.cart {
+  margin-bottom: 130rpx;
+}
+
+.text {
+  color: gray;
+  text-align: center;
+  font-size: 32rpx;
+  margin-top: 30rpx;
+}
+
+.icon {
+  height: 40rpx;
+  width: 40rpx;
+  line-height: 40rpx;
+  margin: auto 18rpx;
+}
+
+.cancel {
+  height: 40rpx;
+  width: 40rpx;
+  line-height: 40rpx;
+  margin: auto 18rpx;
+}
+
+.list {
+  display: flex;
+  width: 100%;
+  border-bottom: 2rpx solid gainsboro;
+  padding: 18rpx 0rpx;
+}
+
+.goods {
+  height: 220rpx;
+  width: 220rpx;
+  margin-right: 5rpx;
+}
+
+.mid-text {
+  width: 38%;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-text {
+  margin-left: 15rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.change-num {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.delete-img {
+  height: 30rpx;
+  width: 30rpx;
+}
+
+.calc {
+  position: absolute;
+  bottom: 130rpx;
+  left: 0;
+  width: 100%;
+  background-color: #ff9700;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pay {
+  margin-left: 18rpx;
+  margin-right: 18rpx;
+}
+
+
+.choose-left{
+  display: flex;align-items: center;
+}
+
+.choose-right{
+  display: flex;align-items: center;
+}
+.icon2 {
+  height: 40rpx;
+  width: 40rpx;
+  
+  margin: auto 18rpx;
+}

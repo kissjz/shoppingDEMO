@@ -1,0 +1,104 @@
+.goods{
+  margin-bottom: 140rpx;
+}
+.cart {
+  position: absolute;
+  top: 50rpx;
+  right: 50rpx;
+}
+
+.cartItemsNum{
+   position: absolute;
+   text-align: center;
+   height:38rpx;
+    width:38rpx;
+    line-height: 38rpx;
+   font-size: 30rpx;
+  top: 60rpx;
+  right: 95rpx;
+  z-index: 100;
+  border-radius:50%;
+  color: white;
+  background-color:#ff9700;
+}
+
+.icon {
+  height: 70rpx;
+  width: 70rpx;
+}
+
+.media {
+  height: 750rpx;
+  padding: 40rpx 45rpx;
+  text-align: center;
+  color: #454552;
+  border-bottom: 30rpx solid #ededed;
+}
+
+.media-img {
+  display: flex;
+  justify-content: center;
+}
+
+.media-img image {
+  border-radius: 50%;
+  width: 300rpx;
+  height: 300rpx;
+  margin-bottom: 70rpx;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow:1;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #ff9700;
+  margin: 30rpx auto;
+  width: 90%;
+  border-radius: 40rpx;
+}
+.bar image{
+  margin-top:10rpx;
+  height:60rpx;
+  width:60rpx;
+  color: gray;
+}
+.media-text{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.media-text text{
+  margin: 20rpx;
+}
+text.state{
+  font-size:32rpx;
+}
+ text.name{
+  font-size:45rpx;
+}
+ text.price {
+  font-size:40rpx;
+}
+
+.swiper-tab{
+  display: flex;
+  flex-grow:1;
+  justify-content: space-evenly;
+  border: 3rpx solid #f4f4f4;
+}
+.on {
+  color:#ff9700;
+  border-bottom: 5rpx solid #ff9700;
+}
+.swiper-tab-list{
+  padding:20rpx 20rpx;
+  font-size:32rpx; 
+}
+.text {
+  margin-top:10rpx;
+  text-indent: 24rpx;
+  color: gray;
+}

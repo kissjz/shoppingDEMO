@@ -1,0 +1,13 @@
+<view class="list">
+  <view class="top-img">
+    <image src="/images/list1.png"></image>
+  </view>
+
+
+   <view>
+     <goods></goods>
+   </view>
+
+
+<nav></nav>
+</view>

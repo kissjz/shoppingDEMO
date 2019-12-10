@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "goods":"/components/newestGoods/newestGoods",
+    "nav":"/components/bottomNav/bottomNav"
+  }
+}

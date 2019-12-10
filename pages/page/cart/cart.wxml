@@ -1,0 +1,50 @@
+<view class="cart">
+  <view wx:if="{{buyItems.length==0}}" class="text">
+    <text>购物车是空的哦</text>
+  </view>
+
+  <view wx:else>
+    <view class="lists">
+      <view class="list" wx:for="{{buyItems }}" wx:key="index">
+        <image bindtap="isSelected" data-index="{{index}}" class="icon" wx:if="{{item.selected==true}}" src="/images/right.png"></image>
+        <image bindtap="isSelected" data-index="{{index}}" class="icon" wx:else src="/images/delect.png"></image>
+        <navigator url="/pages/page/goods/goods?price={{item.price}}&img={{item.img}}&goods={{item.name}}&index={{index}}">
+          <image class="goods" src="{{item.img}}"></image>
+        </navigator>
+        <view class="mid-text">
+          <text>{{item.name}}</text>
+          <view class="change-num">
+            <text bindtap="_subOne" data-index="{{index}}">-</text>
+            <text>{{item.n}}</text>
+            <text bindtap="_addOne" data-index="{{index}}">+</text>
+          </view>
+        </view>
+
+        <view class="right-text">
+          <text>{{item.price}}</text>
+          <image class="delete-img" src="/images/delect.png" bindtap="deleteItem" data-index="{{index}}"></image>
+        </view>
+      </view>
+    </view>
+
+
+
+    <view class="calc">
+      <view class="choose-left">
+        <image bindtap="_chooseAll" class="icon2" 
+        wx:if="{{isAll==true}}" src="/images/right.png"></image>
+        <image bindtap="_chooseAll" class="icon2" wx:else src="/images/delect.png"></image>
+        <text>全选</text>
+      </view>
+
+      <view class="choose-right">
+         <text >总金额:{{money}}</text>
+         <text class="pay">去结算</text>
+      </view>
+    </view>
+
+  </view>
+
+  
+<nav></nav>
+</view>

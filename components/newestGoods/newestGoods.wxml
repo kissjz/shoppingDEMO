@@ -1,0 +1,15 @@
+<view class="goods">
+  <view class="newest-lists">
+    <view class="newest-list" wx:for="{{newestGoods}}" wx:key="index">
+      <navigator url="/pages/page/goods/goods?price={{item.price}}&img={{item.img}}&goods={{item.goods}}&index={{index}}">
+        <view class="media-img">
+          <image class="img" src="{{item.img}}"></image>
+        </view>
+        <view class="media-text">
+          <text>{{item.goods}}</text>
+          <text>{{item.price}}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

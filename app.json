@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/page/cart/cart"
+  ],
+  "window":{
+    "navigationBarTextStyle":"white",
+    "navigationBarTitleText":"零食商贩",
+    "navigationBarBackgroundColor":"#FF9700",
+    "backgroundColor":"#eeeeee",
+    "enablePullDownRefresh":true
+  },
+    "networkTimeout": {
+      "request": 10000,
+      "connectSocket": 10000,
+      "uploadFile": 10000,
+      "downloadFile": 10000
+    },
+   
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
